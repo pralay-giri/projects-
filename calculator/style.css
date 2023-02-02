@@ -1,0 +1,70 @@
+body {
+    background-image: linear-gradient(45deg, #845ec2, #d65dd0, #ff6fcd, #ff8389, #e6b55b, #eaea67);
+    background-size: 400%;
+    animation: bg-animation 10s infinite alternate;
+}
+
+@keyframes bg-animation {
+    0% {
+        background-position: left;
+    }
+
+    100% {
+        background-position: right;
+    }
+}
+
+#container {
+    width: 15rem;
+    height: inherit;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    background-color: white;
+    border: 1px solid white;
+    padding: .5rem;
+    border-radius: .5rem;
+    word-break: break-all;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2px;
+    animation: border_animation 5s infinite alternate;
+}
+
+@keyframes border_animation {
+    0%{box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);}
+    100%{box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.5);}
+}
+
+.output_screen {
+    border: 1px solid gray;
+    padding: .5rem;
+    text-align: right;
+    grid-column: 1 / -1;
+    height: 8vh;
+    border-radius: 5px;
+}
+
+.output_screen>p {
+    margin: 5px;
+    width: auto;
+    height: 1rem;
+}
+
+button[name="equal"] {
+    grid-column: 3 / -1;
+}
+
+button {
+    border: 1px solid white;
+    font-size: medium;
+    cursor: pointer;
+    padding: 5px;
+    height: 6vh;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: rgb(208, 208, 208);
+}
