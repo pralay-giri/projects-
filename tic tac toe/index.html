@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>TIC TAC TOE</title>
+</head>
+
+<body>
+    <div id="container">
+        <div class="messageBox">
+            <span id="turnMsg">turn for X</span>
+        </div>
+        <div class="gamegrid">
+            <div class="box bt-0 bl-0 hovver"><span class="textBox"></span></div> 
+            <div class="box bt-0"><span class="textBox"></span></div>
+            <div class="box bt-0 br-0"><span class="textBox"></span></div>
+            <div class="box bl-0"><span class="textBox"></span></div>
+            <div class="box"><span class="textBox"></span></div>
+            <div class="box br-0"><span class="textBox"></span></div>
+            <div class="box bb-0 bl-0"><span class="textBox"></span></div>
+            <div class="box bb-0"><span class="textBox"></span></div>
+            <div class="box br-0 bb-0"><span class="textBox"></span></div>
+        </div>
+    </div>
+    <div class="winStatus">
+        <p id="winnerText"></p>
+        <button type="reset" id="restartBtn" onclick="restart()">Restart</button>
+    </div>
+    <div class="overlay"></div>
+</body>
+
+</html>
